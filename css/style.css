@@ -52,6 +52,7 @@
   --radius-full: 9999px;
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --header-height: 110px;
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -278,6 +279,7 @@ ul, ol {
   left: 0;
   width: 100%;
   z-index: 1000;
+  padding-top: env(safe-area-inset-top, 0px);
   transition: var(--transition);
 }
 
@@ -527,7 +529,7 @@ ul, ol {
 .hero-section {
   position: relative;
   min-height: 100vh;
-  padding-top: 11rem;
+  padding-top: calc(var(--header-height, 110px) + 2.5rem);
   padding-bottom: 5rem;
   display: flex;
   align-items: center;
@@ -1917,6 +1919,15 @@ ul, ol {
 
 /* --- RESPONSIVE MEDIA QUERIES & MOBILE OPTIMIZATIONS --- */
 @media (max-width: 1024px) {
+  :root {
+    --header-height: 85px;
+  }
+  .hero-section {
+    display: block !important;
+    min-height: auto !important;
+    padding-top: calc(var(--header-height, 85px) + 2.5rem) !important;
+    padding-bottom: 3.5rem;
+  }
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1949,6 +1960,10 @@ ul, ol {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
   /* Hide desktop-only elements */
   .utility-bar,
   .nav-links,
@@ -2180,9 +2195,10 @@ ul, ol {
 
   /* Hero Section */
   .hero-section {
-    padding-top: 6.5rem;
+    display: block !important;
+    min-height: auto !important;
+    padding-top: calc(var(--header-height, 70px) + 2.75rem) !important;
     padding-bottom: 2.75rem;
-    min-height: auto;
   }
 
   .hero-content {
@@ -2190,9 +2206,10 @@ ul, ol {
   }
 
   .hero-trust-tag {
-    margin-bottom: 1rem;
-    font-size: 0.78rem;
-    padding: 0.35rem 0.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.825rem;
+    padding: 0.45rem 1rem;
   }
 
   .hero-headline {

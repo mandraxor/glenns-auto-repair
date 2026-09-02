@@ -93,17 +93,31 @@ class GlennsAutomotiveApp {
     }
   }
 
-  /* --- 2. HEADER SCROLL EFFECT --- */
+  /* --- 2. HEADER SCROLL EFFECT & DYNAMIC HEIGHT --- */
   initHeaderScroll() {
     const header = document.querySelector('.site-header');
     if (!header) return;
 
+    const setHeaderHeight = () => {
+      const h = header.getBoundingClientRect().height;
+      if (h > 0) {
+        document.documentElement.style.setProperty('--header-height', `${Math.round(h)}px`);
+      }
+    };
+
+    // Calculate immediately and on window load
+    setHeaderHeight();
+    window.addEventListener('load', setHeaderHeight);
+    window.addEventListener('resize', setHeaderHeight, { passive: true });
+    window.addEventListener('orientationchange', () => setTimeout(setHeaderHeight, 150));
+
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 30) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
+      setHeaderHeight();
     }, { passive: true });
   }
 
