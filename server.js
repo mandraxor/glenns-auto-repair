@@ -25,16 +25,24 @@ const server = http.createServer((req, res) => {
   if (reqUrl === '/') reqUrl = '/index.html';
 
   const safePath = path.normalize(reqUrl).replace(/^(\.\.[\/\\])+/, '');
-  const filePath = path.join(PUBLIC_DIR, safePath);
+  let filePath = path.join(PUBLIC_DIR, safePath);
 
-  fs.stat(filePath, (err, stats) => {
+  // Check if file exists, or if appending .html matches a file (clean URLs)
+  let targetPath = filePath;
+  if (!fs.existsSync(targetPath) || fs.statSync(targetPath).isDirectory()) {
+    if (fs.existsSync(filePath + '.html')) {
+      targetPath = filePath + '.html';
+    }
+  }
+
+  fs.stat(targetPath, (err, stats) => {
     if (err || !stats.isFile()) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
       res.end('404 Not Found');
       return;
     }
 
-    const ext = path.extname(filePath).toLowerCase();
+    const ext = path.extname(targetPath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
     res.writeHead(200, {

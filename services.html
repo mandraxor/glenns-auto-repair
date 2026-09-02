@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Repair & Maintenance Services | Glenn's Automotive Las Vegas</title>
+  <meta name="description" content="Complete automotive repair and preventive maintenance services in Las Vegas, NV. Engine diagnostics, brake repair, desert A/C recharge, transmissions, and factory maintenance.">
+  <link rel="canonical" href="https://tuneupslasvegas.com/services">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Glenn's Automotive Repair and Maintenance",
+    "image": "https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+1-702-491-4514",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4125 Arctic Spring Ave. Unit 11",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "postalCode": "89115",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==================== 1. STICKY HEADER & UTILITY BAR ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="utility-bar">
+      <div class="container utility-bar-inner">
+        <div class="utility-left">
+          <div class="utility-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>4125 Arctic Spring Ave. Unit 11, Las Vegas, NV 89115</span>
+          </div>
+          <div class="utility-item">
+            <span class="status-pill open" id="shopStatusPill">
+              <span class="pulse-dot"></span>
+              <span id="shopStatusText">Open Today • Closes 5:00 PM</span>
+            </span>
+          </div>
+        </div>
+        <div class="utility-right">
+          <div class="utility-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Fri: 8AM–5PM | Sat: 9AM–5PM</span>
+          </div>
+          <div class="utility-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>ASE Master Tech Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Glenn's Automotive Repair Home">
+          <div class="brand-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">Glenn's <span>Automotive</span></div>
+            <div class="brand-subtitle">Repair &amp; Maintenance • Las Vegas</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="diagnostics.html" class="nav-link">Symptom Checker</a></li>
+          <li><a href="about.html" class="nav-link">Why Glenn's</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Hours &amp; Location</a></li>
+        </ul>
+
+        <!-- Action CTAs -->
+        <div class="nav-actions">
+          <a href="tel:+17024914514" class="nav-phone-btn" title="Call Glenn's Automotive" aria-label="Call Glenn's Automotive at (702) 491-4514">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="nav-phone-text">(702) 491-4514</span>
+          </a>
+
+          <button type="button" class="btn btn-primary btn-sm nav-book-btn" onclick="window.GlennsApp.openBookingModal()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Book Appointment</span>
+          </button>
+
+          <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      <div class="mobile-drawer-top">
+        <div class="drawer-brand-row">
+          <div class="brand-text">
+            <div class="brand-title">Glenn's <span>Automotive</span></div>
+            <span class="status-pill open" style="margin-top: 0.35rem;">
+              <span class="pulse-dot"></span>
+              <span class="shop-status-text">Open Today • Closes 5:00 PM</span>
+            </span>
+          </div>
+          <button type="button" class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <a href="tel:+17024914514" class="mobile-drawer-call-banner">
+          <div class="call-banner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #34d399;">Tap to Call Directly</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #ffffff;">(702) 491-4514</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="mobile-drawer-links">
+        <a href="services.html" class="mobile-nav-link active">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Services Catalog</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="diagnostics.html" class="mobile-nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue-light)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>Vehicle Symptom Diagnostic</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="about.html" class="mobile-nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Why Choose Glenn's</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="reviews.html" class="mobile-nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Verified Customer Reviews</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="contact.html" class="mobile-nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue-light)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Location &amp; Driving Directions</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div class="mobile-drawer-bottom">
+        <button type="button" class="btn btn-primary btn-full" onclick="window.GlennsApp.openBookingModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Book Appointment / Estimate</span>
+        </button>
+        <a href="https://maps.google.com/maps?daddr=4125+Arctic+Spring+Ave.+Unit+11,+Las+Vegas,+NV+89115" target="_blank" rel="noopener" class="btn btn-secondary btn-full" style="margin-top: 0.65rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          <span>Get Directions to Unit 11</span>
+        </a>
+        <div class="mobile-drawer-address">
+          4125 Arctic Spring Ave. Unit 11, Las Vegas, NV 89115<br>
+          Mon–Fri 8AM–5PM | Sat 9AM–5PM
+        </div>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  </header>
+
+  <!-- ==================== 2. SUBPAGE HERO BANNER ==================== -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Services &amp; Maintenance</span>
+      </div>
+      <div class="badge-pill badge-amber" style="margin-bottom: 0.75rem;">Comprehensive Auto Repair • Domestic &amp; Imports</div>
+      <h1 class="page-title">Precision Auto Repair &amp; Scheduled Care in Las Vegas</h1>
+      <p class="page-description">
+        From advanced computerized check engine diagnostics and ceramic brake replacements to desert climate air conditioning rebuilds—Glenn's Automotive delivers master-certified repairs backed by our 24-Month / 24,000-Mile warranty.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 3. DETAILED SERVICE BREAKDOWN ==================== -->
+  <main class="service-detail-section">
+    <div class="container">
+
+      <!-- 1. Engine Diagnostics -->
+      <article class="service-detail-card" id="engine-diagnostics">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1000&q=80" alt="Engine Diagnostics and Computerized Scanner at Glenn's Automotive">
+          <div class="service-detail-badge">Computerized Scanning</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Engine Diagnostics &amp; Check Engine Light</h3>
+          <p>
+            Modern vehicles feature dozens of interconnected control modules. When your Check Engine Light or warning indicator illuminates, we don't guess—we connect professional Snap-on and OEM-level diagnostic scanners to extract live sensor data, freeze-frame error logs, and perform circuit resistance testing to pinpoint the root cause immediately.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>OBD-II &amp; CAN Bus live scan</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>O2 &amp; MAF sensor testing</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>EVAP smoke leak detection</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Ignition coil &amp; cylinder misfire</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Average Turnaround:</span>
+              <strong style="display: block; color: var(--text-primary);">Same-Day Diagnosis</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Engine Diagnostics & Check Engine Light')">
+              Book Engine Diagnostic
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Brake System Overhaul -->
+      <article class="service-detail-card reverse" id="brakes">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1600790142055-619df03207e6?auto=format&fit=crop&w=1000&q=80" alt="Brake pad replacement and rotor inspection">
+          <div class="service-detail-badge">Safety Critical</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Brake System Repair, Pads &amp; Rotors</h3>
+          <p>
+            Your vehicle's brakes are its most essential safety system. Las Vegas stop-and-go Strip traffic combined with extreme ambient heat causes aggressive pad wear and rotor warping. We install premium low-dust ceramic brake pads, perform precision rotor measurement and replacement, service hydraulic calipers, and flush moisture-contaminated brake fluid.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Ceramic low-dust brake pads</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Vented rotor replacement</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>DOT 4 fluid pressure flush</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>ABS sensor &amp; caliper overhaul</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Warranty Protection:</span>
+              <strong style="display: block; color: var(--text-primary);">24-Mo / 24,000-Miles</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Brake System Repair & Inspection')">
+              Book Brake Service
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Desert Climate A/C & Cooling -->
+      <article class="service-detail-card" id="air-conditioning">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Auto Air Conditioning Recharge and Radiator Flush">
+          <div class="service-detail-badge">Desert Climate Specialist</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Desert Climate A/C Repair &amp; Cooling Systems</h3>
+          <p>
+            When Las Vegas temperatures exceed 110&deg;F, your air conditioning system is not a luxury—it is an emergency necessity. We service both traditional R-134a and modern R-1234yf refrigerant systems, diagnose slow microscopic leaks with ultraviolet fluorescent dye, replace failing compressors, and flush contaminated radiators before cooling failure destroys your engine.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>R134a &amp; R1234yf evacuation &amp; fill</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Compressor &amp; clutch replacement</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Radiator &amp; water pump flush</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>UV electronic dye leak test</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Diagnostic Result:</span>
+              <strong style="display: block; color: var(--text-primary);">Vent Temp Down to 38&deg;F</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Desert Climate A/C & Cooling System')">
+              Book A/C Inspection
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Factory Scheduled Maintenance -->
+      <article class="service-detail-card reverse" id="scheduled-maintenance">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1000&q=80" alt="Factory Scheduled Maintenance 30k 60k 90k Service">
+          <div class="service-detail-badge">OEM Factory Spec</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Factory Scheduled Maintenance (30k / 60k / 90k)</h3>
+          <p>
+            Protect your factory new-car warranty without paying exorbitant dealership service department markups. We follow manufacturer-specific maintenance schedules to the exact letter for Honda, Toyota, Ford, GM, BMW, Mercedes, Hyundai, Nissan, and more. All services include digital multi-point inspections with photo documentation sent directly to your phone.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Full synthetic engine oil &amp; filter</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Iridium spark plugs &amp; coils</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Engine &amp; cabin microfilter change</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Digital multi-point health report</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Warranty Compliant:</span>
+              <strong style="display: block; color: var(--text-primary);">100% Carfax Reported</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Factory Scheduled Maintenance')">
+              Book Factory Maintenance
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Transmission & Drivetrain -->
+      <article class="service-detail-card" id="transmission">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=1000&q=80" alt="Transmission Repair and Gear Service">
+          <div class="service-detail-badge">Drivetrain Specialist</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Transmission &amp; Drivetrain Repair</h3>
+          <p>
+            Experiencing delayed gear engagement, hard shifts, slipping gears, or shaking when accelerating? Don't let minor solenoid or fluid issues turn into a multi-thousand dollar transmission replacement. Our technicians diagnose valve bodies, torque converters, CV axles, transfer cases, and perform complete fluid and filter flushes.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Transmission fluid exchange</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>CV joint &amp; drive axle rebuild</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Clutch kit &amp; flywheel service</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Differential &amp; transfer case flush</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Diagnostic Accuracy:</span>
+              <strong style="display: block; color: var(--text-primary);">Electronic Solenoid Testing</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Transmission & Drivetrain Service')">
+              Book Transmission Check
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Auto Body & Glass -->
+      <article class="service-detail-card reverse" id="auto-body">
+        <div class="service-detail-image-wrap">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Auto Body Painting and Windshield Glass Replacement">
+          <div class="service-detail-badge">Collision &amp; Glass</div>
+        </div>
+        <div class="service-detail-content">
+          <h3>Auto Body, Collision &amp; Windshield Glass</h3>
+          <p>
+            From highway rock chips on I-15 to parking lot scrapes and minor collision damage, Glenn's Automotive provides complete exterior restoration. We perform paintless dent repair (PDR), OEM bumper alignment, panel refinishing, and windshield glass replacements with camera sensor recalibration.
+          </p>
+          <div class="service-feature-checklist">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Paintless dent removal (PDR)</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>OEM windshield replacement</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Bumper &amp; fender realignment</span>
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Insurance claim coordination</span>
+            </div>
+          </div>
+          <div class="service-meta-row">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Estimate:</span>
+              <strong style="display: block; color: var(--text-primary);">Free 15-Minute Photo Quote</strong>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.GlennsApp.openBookingModal('Auto Body & Glass Repair')">
+              Book Body Estimate
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==================== 4. DESERT CLIMATE MAINTENANCE SCHEDULE ==================== -->
+      <section class="desert-table-card">
+        <div class="badge-pill badge-amber" style="margin-bottom: 0.5rem;">Las Vegas Local Climate Guide</div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">
+          Extreme Desert Maintenance Schedule
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Standard national maintenance schedules do not account for Mojave Desert driving conditions. 115&deg;F summer road temperatures, fine alkaline dust, and stop-and-go Strip traffic accelerate wear on critical components:
+        </p>
+
+        <div class="desert-table-wrap">
+          <table class="desert-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Standard Schedule</th>
+                <th>Las Vegas Desert Schedule</th>
+                <th>Desert Risk Factor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Engine Oil &amp; Filter</strong></td>
+                <td>7,500 - 10,000 mi</td>
+                <td><strong style="color: var(--accent-amber);">5,000 miles</strong></td>
+                <td>High thermal breakdown causes oil thinning and sludge formation.</td>
+              </tr>
+              <tr>
+                <td><strong>Engine &amp; Cabin Air Filters</strong></td>
+                <td>20,000 - 30,000 mi</td>
+                <td><strong style="color: var(--accent-amber);">10,000 - 15,000 miles</strong></td>
+                <td>Desert dust &amp; construction sand clog airflow, reducing MPG by 10%.</td>
+              </tr>
+              <tr>
+                <td><strong>12V Car Battery</strong></td>
+                <td>4 - 5 years</td>
+                <td><span class="tag-desert-urgent">24 - 36 Months MAX</span></td>
+                <td>Extreme summer under-hood heat boils battery electrolyte fluid.</td>
+              </tr>
+              <tr>
+                <td><strong>Engine Coolant / Antifreeze</strong></td>
+                <td>50,000 - 100,000 mi</td>
+                <td><strong style="color: var(--accent-amber);">30,000 miles</strong></td>
+                <td>Acidic coolant causes radiator solder corrosion and blown head gaskets.</td>
+              </tr>
+              <tr>
+                <td><strong>Brake Fluid (Hydraulic)</strong></td>
+                <td>3 years</td>
+                <td><strong style="color: var(--accent-amber);">2 years / 24,000 miles</strong></td>
+                <td>Moisture boiling point drops, causing spongy pedal and brake fade.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== 5. EMERGENCY TOWING CALLOUT ==================== -->
+  <section class="emergency-banner">
+    <div class="container emergency-layout">
+      <div class="emergency-text">
+        <div class="badge-pill badge-red" style="margin-bottom: 0.5rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+          <span class="pulse-dot"></span> Emergency Diagnostic Triage
+        </div>
+        <h3>Stranded on the Road or Need Rapid Towing Assistance?</h3>
+        <p>Our Las Vegas facility accepts flatbed drop-offs with after-hours key drop slots. Call our dispatch desk immediately for priority diagnostic queueing.</p>
+      </div>
+      <div class="emergency-actions">
+        <a href="tel:+17024914514" class="btn btn-call btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call (702) 491-4514</span>
+        </a>
+        <button type="button" class="btn btn-primary btn-lg" onclick="window.GlennsApp.openBookingModal()">
+          <span>Reserve Bay Online</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="brand-text">
+              <div class="brand-title">Glenn's <span>Automotive</span></div>
+              <div class="brand-subtitle">Repair &amp; Maintenance</div>
+            </div>
+          </div>
+          <p>Las Vegas's premier independent auto repair shop delivering honest diagnostics, transparent estimates, and ASE-certified repairs across the Valley.</p>
+          <p style="font-size: 0.85rem; color: var(--accent-amber-light); margin-top: 1rem;">
+            <strong>Address:</strong> 4125 Arctic Spring Ave. Unit 11, Las Vegas, NV 89115<br>
+            <strong>Phone:</strong> (702) 491-4514
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">Home</a></li>
+            <li class="footer-link-item"><a href="services.html">Services Catalog</a></li>
+            <li class="footer-link-item"><a href="diagnostics.html">Symptom Checker</a></li>
+            <li class="footer-link-item"><a href="about.html">Why Glenn's</a></li>
+            <li class="footer-link-item"><a href="reviews.html">Customer Reviews</a></li>
+            <li class="footer-link-item"><a href="contact.html">Hours &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="services.html#engine-diagnostics">Engine Diagnostics</a></li>
+            <li class="footer-link-item"><a href="services.html#brakes">Brake System Service</a></li>
+            <li class="footer-link-item"><a href="services.html#air-conditioning">A/C Climate Recharge</a></li>
+            <li class="footer-link-item"><a href="services.html#scheduled-maintenance">Factory Maintenance</a></li>
+            <li class="footer-link-item"><a href="services.html#transmission">Transmission Repair</a></li>
+            <li class="footer-link-item"><a href="services.html#auto-body">Auto Body &amp; Glass</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Proudly serving drivers across:</p>
+          <div class="footer-service-areas" style="margin-bottom: 1.5rem;">
+            <span class="area-tag">North Las Vegas</span>
+            <span class="area-tag">Las Vegas Valley</span>
+            <span class="area-tag">Sunrise Manor</span>
+            <span class="area-tag">Nellis AFB</span>
+            <span class="area-tag">Henderson</span>
+            <span class="area-tag">Downtown Las Vegas</span>
+          </div>
+
+          <h4>Verified Reviews</h4>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <a href="https://www.yelp.com/biz/glenns-automotive-maintenance-and-repair-las-vegas" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+              Yelp Reviews
+            </a>
+            <a href="https://maps.app.goo.gl/5CoafGFQTsksRTud7" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+              Google Profile
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Glenn's Automotive Repair and Maintenance. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Privacy Policy</a>
+          <a href="index.html">Terms of Service</a>
+          <a href="contact.html">Directions</a>
+          <a href="services.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 7. MOBILE STICKY FLOATING ACTION BAR ==================== -->
+  <div class="mobile-sticky-bar">
+    <div class="mobile-bar-inner">
+      <a href="tel:+17024914514" class="btn btn-call btn-mobile-action" aria-label="Call Glenn's Automotive Repair at (702) 491-4514">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(702) 491-4514</span>
+      </a>
+      <button type="button" class="btn btn-primary btn-mobile-action" onclick="window.GlennsApp.openBookingModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Book Estimate</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== 8. INTERACTIVE BOOKING MODAL ==================== -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="badge-pill badge-amber" style="margin-bottom: 0.5rem;">Priority Queue</div>
+        <h3 id="modalTitle">Book Appointment &amp; Free Estimate</h3>
+        <p>Schedule your vehicle service with Glenn's Automotive Repair in Las Vegas.</p>
+      </div>
+
+      <div class="modal-body">
+        <form id="modalAppointmentForm" class="widget-form">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="modalClientName">Full Name *</label>
+              <input type="text" id="modalClientName" name="client_name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="modalPhone">Phone Number *</label>
+              <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="(702) 491-4514" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="modalVehicle">Vehicle Year, Make, Model &amp; Mileage</label>
+            <input type="text" id="modalVehicle" name="vehicle" class="form-control" placeholder="e.g. 2019 Honda Accord • 65,000 mi" required>
+          </div>
+
+          <div class="form-group">
+            <label for="modalServiceSelect">Service Category *</label>
+            <select id="modalServiceSelect" name="service" class="form-control" required>
+              <option value="">Select Service Needed...</option>
+              <option value="Engine Diagnostics & Check Engine Light">Engine Diagnostics &amp; Check Engine Light</option>
+              <option value="Brake System Repair & Inspection">Brake System Repair &amp; Inspection</option>
+              <option value="Desert Climate A/C & Cooling System">Desert Climate A/C &amp; Cooling System</option>
+              <option value="Factory Scheduled Maintenance">Factory Scheduled Maintenance (30k/60k/90k)</option>
+              <option value="Transmission & Drivetrain Service">Transmission &amp; Drivetrain Service</option>
+              <option value="Auto Body & Glass Repair">Auto Body, Dent &amp; Glass Repair</option>
+              <option value="General Safety Inspection">Complete Multi-Point Inspection</option>
+            </select>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="modalPreferredDate">Preferred Date *</label>
+              <input type="date" id="modalPreferredDate" name="preferred_date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="modalTimeSlot">Preferred Drop-Off Window</label>
+              <select id="modalTimeSlot" name="time_slot" class="form-control">
+                <option value="Morning 8:00 AM - 10:00 AM">Morning 8:00 AM – 10:00 AM</option>
+                <option value="Mid-Day 10:00 AM - 1:00 PM">Mid-Day 10:00 AM – 1:00 PM</option>
+                <option value="Afternoon 1:00 PM - 4:00 PM">Afternoon 1:00 PM – 4:00 PM</option>
+                <option value="Saturday Morning 9:00 AM - 12:00 PM">Saturday Morning 9:00 AM – 12:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="modalNotes">Symptoms or Additional Details</label>
+            <textarea id="modalNotes" name="notes" rows="3" class="form-control" placeholder="Describe any noises, warning lights, vibrations, or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" style="padding: 1rem;">
+            <span>Confirm &amp; Reserve Priority Slot</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+
+          <div class="widget-privacy-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Glenn's Automotive Repair • 4125 Arctic Spring Ave. Unit 11, Las Vegas, NV</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/diagnostic-tool.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

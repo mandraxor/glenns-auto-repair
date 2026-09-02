@@ -7,6 +7,7 @@
 class GlennsAutomotiveApp {
   constructor() {
     this.initHeaderScroll();
+    this.initActiveNav();
     this.initLiveStatus();
     this.initModal();
     this.initFAQ();
@@ -14,6 +15,28 @@ class GlennsAutomotiveApp {
     this.initForms();
     this.initMobileDrawer();
     this.initCurrentDayHighlight();
+  }
+
+  /* --- 0. ACTIVE NAVIGATION TRACKER --- */
+  initActiveNav() {
+    const currentPath = window.location.pathname.toLowerCase();
+    const pageName = currentPath.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+      const targetPage = href.split('#')[0].split('?')[0].toLowerCase();
+      
+      if (
+        (pageName === '' || pageName === 'index.html') && 
+        (targetPage === '' || targetPage === 'index.html' || targetPage === '/' || targetPage.startsWith('#'))
+      ) {
+        // Handled naturally or on home page
+      } else if (targetPage && pageName.includes(targetPage)) {
+        link.classList.add('active');
+      }
+    });
   }
 
   /* --- 1. LIVE SHOP STATUS CALCULATOR --- */
@@ -254,6 +277,16 @@ class GlennsAutomotiveApp {
         this.showToast(`Thank you, ${name}! Your appointment slot for ${date} has been prioritized. Glenn's team will confirm via SMS.`, 'success');
         modalForm.reset();
         this.closeBookingModal();
+      });
+    }
+
+    const contactForm = document.getElementById('contactInquiryForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = contactForm.querySelector('[name="name"]')?.value || 'Customer';
+        this.showToast(`Thank you, ${name}! Your message has been received by Glenn's dispatch desk. We will reach out shortly.`, 'success');
+        contactForm.reset();
       });
     }
   }
